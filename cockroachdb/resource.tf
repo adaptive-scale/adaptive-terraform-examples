@@ -16,7 +16,7 @@ resource "adaptive_resource" "cockroachdb_test" {
   port          =  5432
   username      = "testuser"
   password      = "testpass"
-  ssl_mode    = "disable"
+  ssl_mode      = "disable"
   database_name =   "testdb"
   root_cert  = <<EOT
 -----BEGIN CERTIFICATE-----
