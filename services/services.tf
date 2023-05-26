@@ -7,11 +7,10 @@ terraform {
   }
 }
 
-
 provider "adaptive" {}
 
-resource "adaptive_resource" "document_test" {
-  type          = "mongodb"
-  name          = "doc1-test-02"
-  uri          = "testsomething"
+resource "adaptive_resource" "nginx" {
+  type = "services"
+  name = "nginx"
+  urls = "65.1.126.16:8042"
 }
