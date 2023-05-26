@@ -12,7 +12,7 @@ provider "adaptive" {}
 resource "adaptive_resource" "awsk9s" {
   name          = "k8s"
   type          = "kubernetes"
-  api_server    = "https://A599F7500FB8D0CB9171B57737723117.gr7.us-east-2.eks.amazonaws.com"
+  api_server    = "<api-server>"
   cluster_token = <<EOT
 <CLUSTER-TOKEN>
 EOT
