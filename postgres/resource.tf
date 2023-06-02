@@ -10,17 +10,11 @@ terraform {
 provider "adaptive" {}
 
 resource "adaptive_resource" "cockroachdb_test" {
-  type          = "cockroachdb"
+  type          = "postgres"
   name          = "testdb"
   host          = "testhost"
   port          =  5432
   username      = "testuser"
   password      = "testpass"
-  ssl_mode      = "disable"
   database_name =   "testdb"
-  root_cert  = <<EOT
------BEGIN CERTIFICATE-----
-multiline cert
------END CERTIFICATE-----
-EOT
 }
