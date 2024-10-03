@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     adaptive = {
-      source = "adaptive-scale/adaptive"
-      version = "0.0.11"
+      source  = "adaptive-scale/adaptive"
+      version = "0.1.3"
     }
   }
 }
@@ -20,9 +20,9 @@ resource "adaptive_resource" "postgres_test" {
 }
 
 resource "adaptive_endpoint" "session_terra" {
-  name         = "endpoint-terraform"
-  type         = "direct"
-  ttl          = "3h"
+  name     = "endpoint-terraform"
+  type     = "direct"
+  ttl      = "3h"
   resource = adaptive_resource.postgres_test.name
-  users = ["member1@yourorg.com", "member2@yourorg.com"]
+  users    = ["member1@yourorg.com", "member2@yourorg.com"]
 }
