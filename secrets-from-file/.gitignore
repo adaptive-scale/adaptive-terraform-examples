@@ -1,0 +1,15 @@
+# Secrets files - NEVER commit to version control
+secrets*.json
+secrets/
+*.secrets
+
+# Terraform state files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform lock files
+.terraform.lock.hcl
+
+# Terraform plan files
+*.tfplan
