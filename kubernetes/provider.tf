@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     adaptive = {
-      source  = "adaptive-scale/local/adaptive"
-      version = "0.1.6"
+      source  = "adaptive-scale/adaptive"
+      version = "0.1.7"
     }
   }
 }
