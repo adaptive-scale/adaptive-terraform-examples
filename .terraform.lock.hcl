@@ -2,8 +2,8 @@
 # Manual edits may be lost in future updates.
 
 provider "adaptive-scale/local/adaptive" {
-  version = "0.1.0"
+  version = "0.1.14"
   hashes = [
-    "h1:Vt1VKEbvqRW4lIr9EN1DxomrZHq8dPBJ8Gil+wx4sbo=",
+    "h1:SdAEp4UU0r8sxexRpHsXKdmUzDmes+cA56c+USZLZ9Q=",
   ]
 }
