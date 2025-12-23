@@ -17,12 +17,12 @@ resource "adaptive_endpoint" "mongodb_access" {
   resource = adaptive_resource.mongodb.name
 
   users = [
-    "developer@company.com",
-    "data-engineer@company.com"
+    "test123@adaptive.live"
   ]
 
   # Optional: Add authorization level for the endpoint
   authorization = adaptive_authorization.mongodb_developer.name
+  pause_timeout = "30m"
 }
 
 # ============================================================================
@@ -39,7 +39,7 @@ resource "adaptive_authorization" "mongodb_developer" {
   role: "collectionARole",
   privileges: [
     {
-      resource: { db: "test", collection: "prod" },
+      resource: { db: "test1", collection: "prod" },
       actions: [ "find", "update", "insert" ]
     },    {
       resource: { db: "test", collection: "test" },
