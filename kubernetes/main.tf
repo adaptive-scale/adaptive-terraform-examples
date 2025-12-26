@@ -24,6 +24,16 @@ EOF
 nodeSelector:
   environment: test
 EOF
+  node_affinity = <<EOF
+nodeAffinity:
+  requiredDuringSchedulingIgnoredDuringExecution:
+    nodeSelectorTerms:
+    - matchExpressions:
+      - key: environment
+        operator: In
+        values:
+        - test
+EOF
 }
 
 # Endpoint for Kubernetes cluster access
@@ -33,13 +43,13 @@ resource "adaptive_endpoint" "kubernetes_access" {
   ttl      = "6h"
   resource = adaptive_resource.kubernetes.name
 
-  users = [
-    "developer@company.com",
-    "platform-engineer@company.com"
-  ]
+#   users = [
+#     "developer@company.com",
+#     "platform-engineer@company.com"
+#   ]
 
   # Optional: Add authorization level for the endpoint
-  authorization = adaptive_authorization.kubernetes_developer.name
+#   authorization = adaptive_authorization.kubernetes_developer.name
 }
 
 # Create an emergency authorization for break-glass scenarios

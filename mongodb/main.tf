@@ -1,12 +1,7 @@
 resource "adaptive_resource" "mongodb" {
   type = "mongodb"
-
   name          = "mongodb-test"
-  host          = "localhost"
-  port          = "27017"
-  username      = "testuser"
-  password      = "testpassword"
-  database_name = "testdb"
+  uri          = "mongodb+srv://cluster0.test.mongodb.net"
 }
 
 # Endpoint for MongoDB database access
@@ -17,12 +12,11 @@ resource "adaptive_endpoint" "mongodb_access" {
   resource = adaptive_resource.mongodb.name
 
   users = [
-    "test123@adaptive.live"
+    "dataeng@adaptive.live"
   ]
 
   # Optional: Add authorization level for the endpoint
-  authorization = adaptive_authorization.mongodb_developer.name
-  pause_timeout = "30m"
+#   authorization = adaptive_authorization.mongodb_developer.name
 }
 
 # ============================================================================
@@ -39,7 +33,7 @@ resource "adaptive_authorization" "mongodb_developer" {
   role: "collectionARole",
   privileges: [
     {
-      resource: { db: "test1", collection: "prod" },
+      resource: { db: "test", collection: "prod" },
       actions: [ "find", "update", "insert" ]
     },    {
       resource: { db: "test", collection: "test" },

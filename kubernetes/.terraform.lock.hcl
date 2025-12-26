@@ -2,31 +2,8 @@
 # Manual edits may be lost in future updates.
 
 provider "adaptive-scale/local/adaptive" {
-  version = "0.1.15"
+  version = "0.1.13"
   hashes = [
-    "h1:NNn+FTVwaNXwB1wIqhXTz5otTFGVTF/iLQx+J0oGQFQ=",
-  ]
-}
-
-provider "registry.terraform.io/adaptive-scale/adaptive" {
-  version     = "0.1.6"
-  constraints = "0.1.6"
-  hashes = [
-    "h1:f1esZCFF759ecmx/iizKl5C9o80pf69VAdRiCTV4U+o=",
-    "zh:02f9231141893a6285940cdb8fd56027246e7d5aeffad94300385006a26f86e7",
-    "zh:0edd3217f9bc563773b4d80c4089ddaa3f4955676a661dee5bd551bb432867a4",
-    "zh:12bbfdd5a5091569a81e754159b38646311e5b36e93c57f9faca0166151c30dd",
-    "zh:58b4498f8f9c2fecddc31b3eac67553dc3026f398276dd0ccd4692f3d9b3f29b",
-    "zh:60d695da0bdff43e55583f3aad50fbaa7b26ded537eeda71b47bc96b8be718ab",
-    "zh:7d631f0f263119327bbc52173be993bca793301184e7d5789a16db1712a5f44e",
-    "zh:800e1e8f1db442616d7cafdfcbdff7ce7d7643eb22a0618244f9e34e499a03ff",
-    "zh:847e8b7a3976df0d46d443097e2069b0de03e42201f2b4d03bd5cc5f26b0e0ac",
-    "zh:a1d6d82c232da470cc854755c7c73c0c4489140c6fc2732392173932187f3978",
-    "zh:b3f8dcb77a48c1296db2488428dc594c0b678fc6101d21a82cafa78634e82526",
-    "zh:c5bc9cc71080f3a09318ec173c363e2921b72a806978286a03637a3ea2210ceb",
-    "zh:d2b67e761c185f9426108711533162631fb2310f9455e04da94793eeb84c14de",
-    "zh:d97f155a929d1d2b980166f3cf55f5c021a8218a42a1f27bd83e8bed55047bc6",
-    "zh:f178729ebb7982021c73bb177b37512c4c3f2d191a9279e834baeb198e71297b",
-    "zh:f569b65999264a9416862bca5cd2a6177d94ccb0424f3a4ef424428912b9cb3c",
+    "h1:gJ+OM5cFmsCn1ioc68KFvuNmV0dagcYw2evffC3pFp0=",
   ]
 }
