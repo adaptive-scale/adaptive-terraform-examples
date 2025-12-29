@@ -65,7 +65,34 @@ Each integration type has its own directory containing:
 
 ## Usage
 
-To test a specific integration:
+### Quick Start with Helper Scripts
+
+Use the provided shell scripts to quickly apply or destroy configurations:
+
+```bash
+# Apply a configuration
+./apply.sh <directory-name>
+
+# Example: Apply elasticsearch configuration
+./apply.sh elasticsearch
+
+# Destroy resources
+./destroy.sh <directory-name>
+
+# Example: Destroy elasticsearch resources
+./destroy.sh elasticsearch
+```
+
+The scripts will:
+- Navigate to the specified directory
+- Initialize and upgrade Terraform providers
+- Validate the configuration
+- Show the plan
+- Prompt for confirmation before applying/destroying
+
+### Manual Usage
+
+To test a specific integration manually:
 
 1. Navigate to the integration directory:
    ```bash
@@ -74,7 +101,7 @@ To test a specific integration:
 
 2. Initialize Terraform:
    ```bash
-   terraform init
+   terraform init -upgrade
    ```
 
 3. Validate the configuration:
@@ -86,6 +113,54 @@ To test a specific integration:
    ```bash
    terraform plan
    ```
+
+5. Apply the configuration:
+   ```bash
+   terraform apply
+   ```
+
+## Featured Examples
+
+### Elasticsearch with Authorization and Endpoints
+
+The `elasticsearch/` directory demonstrates:
+- Basic Elasticsearch resource configuration
+- Multiple Elasticsearch resources for different environments
+- CLI session endpoints
+- Authorization-based access control with:
+  - Read-only access (monitoring and viewing)
+  - Read-write access (data engineering workflows)
+  - Admin access (full cluster management)
+- User assignments to endpoints
+- TTL (time-to-live) configurations
+
+Example features:
+```terraform
+# Endpoint with authorization for read-only access
+resource "adaptive_endpoint" "elasticsearch_readonly_endpoint" {
+  name     = "elasticsearch-readonly"
+  type     = "direct"
+  ttl      = "6h"
+  resource = adaptive_resource.elasticsearch.name
+
+  authorization = <<EOF
+{
+  "cluster": ["monitor"],
+  "indices": [
+    {
+      "names": ["test-index"],
+      "privileges": ["read", "view_index_metadata"]
+    }
+  ]
+}
+EOF
+
+  users = [
+    "analyst1@company.com",
+    "analyst2@company.com"
+  ]
+}
+```
 
 ## Notes
 
