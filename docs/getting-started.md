@@ -46,7 +46,7 @@ terraform {
   required_providers {
     adaptive = {
       source  = "adaptive-scale/adaptive"
-      version = "~> 1.0"
+      version = "~> 0.1.18"
     }
   }
 }
@@ -215,7 +215,7 @@ terraform {
   required_providers {
     adaptive = {
       source  = "adaptive-scale/adaptive"
-      version = "~> 1.0"
+      version = "~> 0.1.18"
     }
   }
   

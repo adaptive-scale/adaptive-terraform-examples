@@ -144,7 +144,7 @@ resource "adaptive_group" "example_group" {
   ]
   endpoints = [
     adaptive_endpoint.example_endpoint.name
-  ]
+  ] # optional, groups can be mapped later
 }
 ```
 
@@ -203,7 +203,8 @@ Always configure the Adaptive provider in your `provider.tf`:
 terraform {
   required_providers {
     adaptive = {
-      source = "adaptive-scale/adaptive"
+      source  = "adaptive-scale/adaptive"
+      version = "~> 0.1.18"
     }
   }
 }
