@@ -4,7 +4,7 @@ title: Adaptive Terraform Provider Examples
 ---
 
 <div style="text-align: center; margin: 2em 0;">
-  <img src="https://adaptive.live/wp-content/uploads/2024/03/Adaptive-Logo-Color-RGB.svg" alt="Adaptive.live Logo" style="max-width: 300px; height: auto;" />
+  <img src="https://adaptive.live/adaptive-logo-light.svg" alt="Adaptive.live Logo" style="max-width: 300px; height: auto;" />
 </div>
 
 # Adaptive Terraform Provider Examples
