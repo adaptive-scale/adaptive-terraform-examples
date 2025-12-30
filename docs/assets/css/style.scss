@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Custom blue gradient for hero background
+.page-header {
+  background-image: linear-gradient(120deg, #1e3a8a, #3b82f6, #2563eb);
+  background-color: #1e3a8a;
+}
+
+// Optional: Adjust button colors to match the blue theme
+.btn {
+  background-image: linear-gradient(120deg, #2563eb, #3b82f6);
+  
+  &:hover {
+    background-image: linear-gradient(120deg, #1d4ed8, #2563eb);
+  }
+}
