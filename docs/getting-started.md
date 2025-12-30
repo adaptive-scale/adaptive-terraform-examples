@@ -52,7 +52,7 @@ terraform {
 }
 
 provider "adaptive" {
-  # Configuration options
+  # Configuration options, optional. Will automatically pickup from the system
   api_endpoint = "https://api.adaptive.live"
   api_key      = var.adaptive_api_key
 }
