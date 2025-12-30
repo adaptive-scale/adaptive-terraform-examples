@@ -3,6 +3,10 @@ layout: default
 title: Adaptive Terraform Provider Examples
 ---
 
+<div style="text-align: center; margin: 2em 0;">
+  <img src="https://adaptive.live/wp-content/uploads/2024/03/Adaptive-Logo-Color-RGB.svg" alt="Adaptive.live Logo" style="max-width: 300px; height: auto;" />
+</div>
+
 # Adaptive Terraform Provider Examples
 
 Welcome to the comprehensive documentation for the Adaptive Terraform Provider. This repository contains example configurations for all supported integration types.
@@ -15,84 +19,92 @@ Welcome to the comprehensive documentation for the Adaptive Terraform Provider. 
 4. **Customize** the configuration for your needs
 5. **Apply** using `terraform apply`
 
+[📖 Read the Getting Started Guide →](getting-started.md)
+
 ## 📚 Integration Categories
 
 ### Cloud Platforms
 
 #### Amazon Web Services (AWS)
-- **[AWS Integration](../aws/)** - Basic AWS resource configuration
-- **[AWS DocumentDB](../awsdocumentdb/)** - MongoDB-compatible database service
-- **[AWS Redshift](../awsredshift/)** - Data warehouse integration
-- **[AWS Secrets Manager](../awssecretsmanager/)** - Secrets management
-- **[AWS Keyspaces](../keyspaces/)** - Managed Cassandra service
+- **[AWS Integration](aws.md)** - Basic AWS resource configuration
+## 📚 Integration Categories
+
+### Cloud Platforms
+
+#### Amazon Web Services (AWS)
+- **[AWS Integration](aws.md)** - Basic AWS resource configuration
+- **[AWS DocumentDB](aws.md#aws-documentdb)** - MongoDB-compatible database service
+- **[AWS Redshift](aws.md#aws-redshift)** - Data warehouse integration
+- **[AWS Secrets Manager](aws.md#aws-secrets-manager)** - Secrets management
+- **[AWS Keyspaces](aws.md#aws-keyspaces)** - Managed Cassandra service
 
 #### Microsoft Azure
-- **[Azure Integration](../azure/)** - Basic Azure resource configuration
-- **[Azure Cosmos DB (NoSQL)](../azurecosmosnosql/)** - Multi-model database service
-- **[Azure SQL Server](../azuresqlserver/)** - Managed SQL database
+- **[Azure Integration](azure.md)** - Basic Azure resource configuration
+- **[Azure Cosmos DB (NoSQL)](azure.md#azure-cosmos-db-nosql)** - Multi-model database service
+- **[Azure SQL Server](azure.md#azure-sql-server)** - Managed SQL database
 
 #### Google Cloud Platform (GCP)
-- **[GCP Integration](../gcp/)** - Google Cloud Platform resources
-- **[Google OAuth](../google/)** - Google authentication integration
+- **[GCP Integration](gcp.md)** - Google Cloud Platform resources
+- **[Google OAuth](gcp.md#google-oauth-integration)** - Google authentication integration
 
 ### Databases
 
 #### NoSQL Databases
-- **[MongoDB](../mongodb/)** - MongoDB database integration
-- **[MongoDB Atlas](../mongodb_atlas/)** - MongoDB cloud service
-- **[MongoDB Authorization](../mongodb-authorization/)** - Advanced authorization with multi-line roles
-- **[MongoDB + AWS Secrets](../mongodb_aws_secrets_manager/)** - MongoDB with AWS Secrets Manager
-- **[CockroachDB](../cockroachdb/)** - Distributed SQL database
-- **[Elasticsearch](../elasticsearch/)** - Search and analytics engine
-- **[ClickHouse](../clickhouse/)** - Columnar database
-- **[YugabyteDB](../yugabytedb/)** - Distributed SQL database
+- **[MongoDB](mongodb.md)** - MongoDB database integration
+- **[MongoDB Atlas](mongodb.md#mongodb-atlas)** - MongoDB cloud service
+- **[MongoDB Authorization](mongodb.md#authorization--roles)** - Advanced authorization with multi-line roles
+- **[MongoDB + AWS Secrets](mongodb.md#aws-secrets-manager-integration)** - MongoDB with AWS Secrets Manager
+- **[CockroachDB](databases.md)** - Distributed SQL database
+- **[Elasticsearch](databases.md)** - Search and analytics engine
+- **[ClickHouse](databases.md)** - Columnar database
+- **[YugabyteDB](databases.md)** - Distributed SQL database
 
 #### SQL Databases
-- **[PostgreSQL](../postgres/)** - PostgreSQL database integration
-- **[PostgreSQL + AWS Secrets](../postgres_aws_secrets_manager/)** - PostgreSQL with AWS Secrets Manager
-- **[MySQL](../mysql/)** - MySQL database integration
-- **[MySQL + AWS Secrets](../mysql_aws_secrets_manager/)** - MySQL with AWS Secrets Manager
-- **[SQL Server](../sql_server/)** - Microsoft SQL Server integration
-- **[SQL Server + AWS Secrets](../sqlserver_aws_secrets_manager/)** - SQL Server with AWS Secrets Manager
-- **[Snowflake](../snowflake/)** - Cloud data warehouse
-- **[Snowflake + AWS Secrets](../snowflake_aws_secrets_manager/)** - Snowflake with AWS Secrets Manager
+- **[PostgreSQL](postgres.md)** - PostgreSQL database integration
+- **[PostgreSQL + AWS Secrets](postgres.md#aws-secrets-manager-integration)** - PostgreSQL with AWS Secrets Manager
+- **[MySQL](mysql.md)** - MySQL database integration
+- **[MySQL + AWS Secrets](mysql.md#aws-secrets-manager-integration)** - MySQL with AWS Secrets Manager
+- **[SQL Server](databases.md)** - Microsoft SQL Server integration
+- **[SQL Server + AWS Secrets](databases.md)** - SQL Server with AWS Secrets Manager
+- **[Snowflake](databases.md)** - Cloud data warehouse
+- **[Snowflake + AWS Secrets](databases.md)** - Snowflake with AWS Secrets Manager
 
 ### Networking & Security
 
 #### Network Firewalls
-- **[Cisco NGFW](../cisco_ngfw/)** - Cisco Next-Generation Firewall
-- **[Fortinet NGFW](../fortinet_ngfw/)** - Fortinet Next-Generation Firewall
-- **[Palo Alto NGFW](../paloalto_ngfw/)** - Palo Alto Next-Generation Firewall
+- **[Cisco NGFW](security-networking.md#next-generation-firewalls)** - Cisco Next-Generation Firewall
+- **[Fortinet NGFW](security-networking.md#next-generation-firewalls)** - Fortinet Next-Generation Firewall
+- **[Palo Alto NGFW](security-networking.md#next-generation-firewalls)** - Palo Alto Next-Generation Firewall
 
 #### Network Infrastructure
-- **[Aruba Instant On](../aruba_instant_on/)** - Aruba networking equipment
-- **[Aruba Switch](../aruba_sw/)** - Aruba switch configuration
-- **[HPE Switch](../hpe_switch/)** - HPE switch management
-- **[ZeroTier](../zerotier/)** - Software-defined networking
-- **[Kubernetes](../kubernetes/)** - Container orchestration platform
+- **[Aruba Instant On](security-networking.md#network-infrastructure)** - Aruba networking equipment
+- **[Aruba Switch](security-networking.md#network-infrastructure)** - Aruba switch configuration
+- **[HPE Switch](security-networking.md#network-infrastructure)** - HPE switch management
+- **[ZeroTier](security-networking.md#network-infrastructure)** - Software-defined networking
+- **[Kubernetes](security-networking.md#network-infrastructure)** - Container orchestration platform
 
 ### Identity & Access Management
 
-- **[Okta](../okta/)** - Identity and access management
-- **[OneLogin](../onelogin/)** - Cloud identity management
-- **[JumpCloud](../jumpcloud/)** - Directory-as-a-Service platform
+- **[Okta](security-networking.md#identity--access-management)** - Identity and access management
+- **[OneLogin](security-networking.md#identity--access-management)** - Cloud identity management
+- **[JumpCloud](security-networking.md#identity--access-management)** - Directory-as-a-Service platform
 
 ### Monitoring & Observability
 
-- **[Datadog](../datadog/)** - Monitoring and analytics platform
-- **[Coralogix](../coralogix/)** - Log analytics and monitoring
-- **[Splunk](../splunk/)** - Security and observability platform
-- **[Syslog](../syslog/)** - Syslog server integration
+- **[Datadog](monitoring.md#datadog)** - Monitoring and analytics platform
+- **[Coralogix](monitoring.md#coralogix)** - Log analytics and monitoring
+- **[Splunk](monitoring.md#splunk)** - Security and observability platform
+- **[Syslog](monitoring.md#syslog)** - Syslog server integration
 
 ### Communication & Collaboration
 
-- **[Microsoft Teams](../msteams/)** - Team collaboration platform
-- **[RabbitMQ](../rabbitmq/)** - Message broker
+- **[Microsoft Teams](https://github.com/adaptive-scale/adaptive-terraform-examples/tree/master/msteams)** - Team collaboration platform
+- **[RabbitMQ](https://github.com/adaptive-scale/adaptive-terraform-examples/tree/master/rabbitmq)** - Message broker
 
 ### Custom Integrations
 
-- **[Custom SIEM Webhook](../custom_siem_webhook/)** - Custom SIEM integration via webhooks
-- **[Custom Integration](../customintegration/)** - Generic custom integration template
+- **[Custom SIEM Webhook](monitoring.md#custom-siem-webhook)** - Custom SIEM integration via webhooks
+- **[Custom Integration](https://github.com/adaptive-scale/adaptive-terraform-examples/tree/master/customintegration)** - Generic custom integration template
 
 ### Special Configurations
 

@@ -3,6 +3,7 @@ theme: jekyll-theme-cayman
 title: Adaptive Terraform Provider Examples
 description: Comprehensive examples and documentation for the Adaptive Terraform Provider
 show_downloads: true
+logo: /assets/adaptive-logo.png
 github:
   repository_url: https://github.com/adaptive-scale/adaptive-terraform-examples
   is_project_page: true
