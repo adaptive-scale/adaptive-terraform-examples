@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Adaptive Terraform Provider Examples
+title: Adaptive Terraform Provider
 ---
 
 <div style="text-align: center; margin: 2em 0;">
   <img src="https://adaptive.live/adaptive-logo-light.svg" alt="Adaptive.live Logo" style="max-width: 300px; height: auto;" />
 </div>
 
-# Adaptive Terraform Provider Examples
+# Adaptive Terraform Provider 
 
 Welcome to the comprehensive documentation for the Adaptive Terraform Provider. This repository contains example configurations for all supported integration types.
 
