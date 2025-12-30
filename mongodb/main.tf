@@ -12,7 +12,7 @@ resource "adaptive_endpoint" "mongodb_access" {
   resource = adaptive_resource.mongodb.name
 
   users = [
-    "dataeng@adaptive.live"
+    "debarshi@adaptive.live"
   ]
 
   # Optional: Add authorization level for the endpoint
@@ -24,24 +24,24 @@ resource "adaptive_endpoint" "mongodb_access" {
 # ============================================================================
 
 # Create a developer authorization for MongoDB database access
-resource "adaptive_authorization" "mongodb_developer" {
-  name          = "mongodb-developer-role"
-  description   = "Developer access to MongoDB databases with read/write permissions"
-  resource_type = "mongodb"
-  permissions   = <<EOF
-  {
-  role: "collectionARole",
-  privileges: [
-    {
-      resource: { db: "test", collection: "prod" },
-      actions: [ "find", "update", "insert" ]
-    },    {
-      resource: { db: "test", collection: "test" },
-      actions: [ "find" ]
-    }
-  ],
-  roles: []
-}
-EOF
-}
+# resource "adaptive_authorization" "mongodb_developer" {
+#   name          = "mongodb-developer-role"
+#   description   = "Developer access to MongoDB databases with read/write permissions"
+#   resource_type = "mongodb"
+#   permissions   = <<EOF
+#   {
+#   role: "collectionARole",
+#   privileges: [
+#     {
+#       resource: { db: "test", collection: "prod" },
+#       actions: [ "find", "update", "insert" ]
+#     },    {
+#       resource: { db: "test", collection: "test" },
+#       actions: [ "find" ]
+#     }
+#   ],
+#   roles: []
+# }
+# EOF
+# }
 
