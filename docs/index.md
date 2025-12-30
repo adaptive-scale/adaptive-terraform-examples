@@ -27,12 +27,6 @@ Welcome to the comprehensive documentation for the Adaptive Terraform Provider. 
 
 #### Amazon Web Services (AWS)
 - **[AWS Integration](aws.md)** - Basic AWS resource configuration
-## 📚 Integration Categories
-
-### Cloud Platforms
-
-#### Amazon Web Services (AWS)
-- **[AWS Integration](aws.md)** - Basic AWS resource configuration
 - **[AWS DocumentDB](aws.md#aws-documentdb)** - MongoDB-compatible database service
 - **[AWS Redshift](aws.md#aws-redshift)** - Data warehouse integration
 - **[AWS Secrets Manager](aws.md#aws-secrets-manager)** - Secrets management
