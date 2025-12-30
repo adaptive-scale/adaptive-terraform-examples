@@ -1,0 +1,52 @@
+# Jekyll configuration for GitHub Pages
+theme: jekyll-theme-cayman
+title: Adaptive Terraform Provider Examples
+description: Comprehensive examples and documentation for the Adaptive Terraform Provider
+show_downloads: true
+github:
+  repository_url: https://github.com/adaptive-scale/adaptive-terraform-examples
+  is_project_page: true
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
+# Enable relative links
+relative_links:
+  enabled: true
+  collections: true
+
+# Use README files as index pages
+readme_index:
+  enabled: true
+
+# Extract titles from headings
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: true
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Collections
+collections:
+  examples:
+    output: true
+    permalink: /:collection/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
