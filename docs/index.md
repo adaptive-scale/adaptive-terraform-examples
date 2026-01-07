@@ -14,7 +14,7 @@ Welcome to the comprehensive documentation for the Adaptive Terraform Provider. 
 ## 🚀 Quick Start
 
 1. **Install Terraform** (version 0.13+)
-2. **Configure the Adaptive Provider** in your `provider.tf`. `current version - v0.1.18`
+2. **Configure the Adaptive Provider** in your `provider.tf`. `current version - v0.1.19`
 3. **Choose an integration** from the examples below
 4. **Customize** the configuration for your needs
 5. **Apply** using `terraform apply`
