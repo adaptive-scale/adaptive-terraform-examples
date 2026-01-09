@@ -46,7 +46,7 @@ terraform {
   required_providers {
     adaptive = {
       source  = "adaptive-scale/adaptive"
-      version = "~> 0.1.18"
+      version = "0.1.20"
     }
   }
 }
@@ -210,12 +210,12 @@ my-terraform-project/
 
 ```hcl
 terraform {
-  required_version = ">= 0.13"
+  required_version = "0.1.20"
   
   required_providers {
     adaptive = {
       source  = "adaptive-scale/adaptive"
-      version = "~> 0.1.18"
+      version = "0.1.20"
     }
   }
   
